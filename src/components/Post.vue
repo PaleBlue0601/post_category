@@ -1,6 +1,6 @@
 <template>
   <div class="col-3-4 realPost">
-    <h1 class="post-title">{{postObj['post-title']}}</h1>
+    <h1 class="post-title">{{postObj.name}}</h1>
     <p class="post-description">{{postObj['post-description']}}</p>
     <div class="post-meta">
       <i class="fa fa-calendar" aria-hidden="true"> {{postObj['post-time']}}</i>
@@ -60,14 +60,15 @@ export default {
       this.dataList.forEach(item => {
         item.children.forEach(child => {
           if(this.sub_id == child.id){
-            child.list.forEach(sub_item => {
-              if(this.post_id == sub_item.post_id) {
+            child.children.forEach(sub_item => {
+              if(this.post_id == sub_item.id) {
                 this.postObj = sub_item
               }
             })
           }
         })
       })
+      console.log(this.postObj)
       this.mdHtml = this.postObj['post-content']
     },
   },

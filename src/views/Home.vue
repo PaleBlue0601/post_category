@@ -54,7 +54,7 @@ export default {
             push_obj.id = '' + item.id
           }
           push_obj.content = push_obj.id + item.name + ' | ' + sub_item.name + ' '
-          push_obj.count = sub_item.list.length
+          push_obj.count = sub_item.children.length
           push_obj.sub_id = sub_item.id 
           retList.push(push_obj)
         })

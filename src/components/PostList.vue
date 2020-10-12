@@ -2,14 +2,14 @@
   <div class="content_container">
     <div class="post" v-for="(item, index) in postList" :key="index">
       <h1 class="post-title">
-        <a href="">{{item['post-title']}}</a>
+        <a href="">{{item.name}}</a>
       </h1>
       <div class="post-meta">
         <i class="fa fa-calendar" aria-hidden="true"> {{item['post-time']}}</i>
       </div>
       <div class="post-content">{{item['post-description']}}</div>
       <div class="readmore">
-        <a href="javascript:(0);" @click="toPost(item.sub_id, item.post_id)">阅读全文 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+        <a href="javascript:(0);" @click="toPost(item.sub_id, item.id)">阅读全文 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
       </div>
     </div>
   </div>
@@ -56,7 +56,7 @@ export default {
         item.children.forEach(child => {
           // console.log(sub_id, child.id, sub_id === child.id)
            if(sub_id == child.id || sub_id == '0'){
-             child.list.forEach(post_item => {
+             child.children.forEach(post_item => {
               post_item.sub_id = child.id //记录父级sub_id
               retList.push(post_item)
             })
