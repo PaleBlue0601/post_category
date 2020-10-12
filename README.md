@@ -14,9 +14,9 @@
   + mavon-editor
 
 ### 展示效果
-  ![](./image/img1.png)
-  ![](./image/img2.png)
-  ![](./image/img3.png)
+  ![](https://github.com/WHBhorse/post_category/tree/main/image/img1.png)
+  ![](https://github.com/WHBhorse/post_category/tree/main/image/img2.png)
+  ![](https://github.com/WHBhorse/post_category/tree/main/image/img3.png)
 
 ## Project setup
 ```
