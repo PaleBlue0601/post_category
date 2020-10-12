@@ -14,9 +14,9 @@
   + mavon-editor
 
 ### 展示效果
-  ![](https://github.com/WHBhorse/post_category/tree/main/image/img1.png)
-  ![](https://github.com/WHBhorse/post_category/tree/main/image/img2.png)
-  ![](https://github.com/WHBhorse/post_category/tree/main/image/img3.png)
+  ![img1.png](//www.whbhorse.cn/wp-content/uploads/2020/10/img1.png)
+  ![img2.png](//www.whbhorse.cn/wp-content/uploads/2020/10/img2.png)
+  ![img3.png](//www.whbhorse.cn/wp-content/uploads/2020/10/img3.png)
 
 ## Project setup
 ```
